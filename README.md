@@ -7,7 +7,7 @@ This is an [Air native extension](http://www.adobe.com/devnet/air/native-extensi
 Facebook SDK Versions
 ---------
 
-* iOS: 3.16.2 (compatible with iOS 5.0 and above)
+* iOS: 3.23.2 (compatible with iOS 5.0 and above)
 * Android: 3.6 (compatible with Android 2.2 and above)
 
 
@@ -22,7 +22,7 @@ On iOS:
 
 ```xml
 <iPhone>
-    
+
     <InfoAdditions><![CDATA[
 
         <key>CFBundleURLTypes</key>
@@ -50,21 +50,21 @@ On Android:
 <android>
     <manifestAdditions><![CDATA[
         <manifest android:installLocation="auto">
-            
+
             ...
 
             <uses-permission android:name="android.permission.INTERNET"/>
-            
+
             ...
 
             <application>
 
                 ...
-                
+
                 <activity android:name="com.facebook.LoginActivity"/>
                 <activity android:name="com.freshplanet.ane.AirFacebook.LoginActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></activity>
                 <activity android:name="com.freshplanet.ane.AirFacebook.DialogActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"></activity>
-                
+
             </application>
 
         </manifest>
@@ -90,7 +90,7 @@ Build from source
 ---------
 
 Should you need to edit the extension source code and/or recompile it, you will find an ant build script (build.xml) in the *build* folder:
-    
+
 ```bash
 cd /path/to/the/ane
 
@@ -119,13 +119,4 @@ Authors
 
 This ANE has been written by [Thibaut Crenn](https://github.com/titi-us), [Alexis Taugeron](http://alexistaugeron.com) and [Renaud Bardet](http://github.com/renaudbardet). It belongs to [FreshPlanet Inc.](http://freshplanet.com) and is distributed under the [Apache Licence, version 2.0](http://www.apache.org/licenses/LICENSE-2.0).
 
-
-Join the FreshPlanet team - GAME DEVELOPMENT in NYC
-------
-
-We are expanding our mobile engineering teams.
-
-FreshPlanet is a NYC based mobile game development firm and we are looking for senior engineers to lead the development initiatives for one or more of our games/apps. We work in small teams (6-9) who have total product control.  These teams consist of mobile engineers, UI/UX designers and product experts.
-
-
-Please contact Tom Cassidy (tcassidy@freshplanet.com) or apply at http://freshplanet.com/jobs/
+Modifications made by [Matt Schultz](https://github.com/schultz-texas) of [Bee Cave Games](http://beecavegames.com).
