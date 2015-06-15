@@ -92,7 +92,7 @@ public class AirFacebookExtensionContext extends FREContext
 	public void init(String appID, Boolean legacyMode)
 	{
 		_appID = appID;
-		
+
 		Session session = getSession();
 		if (session.getState().equals(SessionState.CREATED_TOKEN_LOADED))
 		{

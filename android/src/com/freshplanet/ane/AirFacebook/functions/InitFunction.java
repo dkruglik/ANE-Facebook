@@ -32,7 +32,7 @@ public class InitFunction extends BaseFunction
         Boolean legacyMode = getBooleanFromFREObject(args[2]);
 		
 		AirFacebookExtension.log("Initializing with application ID " + appID);
-		
+
 		AirFacebookExtension.context.init(appID, legacyMode);
 		
 		return null;

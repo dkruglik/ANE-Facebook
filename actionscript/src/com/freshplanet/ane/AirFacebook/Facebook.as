@@ -104,7 +104,7 @@ package com.freshplanet.ane.AirFacebook
 		public function init( appID : String, legacyMode : Boolean, urlSchemeSuffix : String = null ) : void
 		{
 			if (!isSupported) return;
-			
+
 			_context.call('init', appID, urlSchemeSuffix, legacyMode);
 		}
 		
@@ -642,7 +642,7 @@ package com.freshplanet.ane.AirFacebook
 		
 		private function log( message : String ) : void
 		{
-			if (_logEnabled) trace("[Facebook] " + message);
+			/*if (_logEnabled)*/ trace("[Facebook] " + message);
 		}
 	}
 }

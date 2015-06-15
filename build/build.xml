@@ -70,7 +70,7 @@
         <echo message="Using Java version ${ant.java.version}."/>
 
         <!-- compile the java code -->
-        <javac source="1.6" destdir="temp/android/build/" includeantruntime="false" debug="${ANDROID_DEBUG}">
+        <javac source="1.6" target="1.6" fork="true" executable="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/bin/javac" destdir="temp/android/build/" includeantruntime="false" debug="${ANDROID_DEBUG}">
             <src path="../android/gen"/>
             <src path="../android/src"/>
             <classpath>
@@ -85,7 +85,8 @@
         <!-- Copy over the required libs -->
         <copy file="../android/libs/bolts-android-1.1.2.jar" todir="temp/android/"/>
         <copy file="../android/libs/annotations.jar" todir="temp/android/"/>
-        
+        <copy file="../android/libs/android-support-v4.jar" todir="temp/android/"/>
+
         <!-- Copy over required resources -->
         <copy todir="temp/android/res/">
             <fileset dir="../android/res/"/>
